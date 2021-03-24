@@ -8,7 +8,7 @@
 import bs4
 import re
 import requests
-
+import unicodedata
 
 u = "https://news.google.com/topstories?hl=en-US&gl=US&ceid=US:en"
 #u = "https://en.wikipedia.org/wiki/Linux"
@@ -18,6 +18,6 @@ for x in b.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']):
     level = int(re.search(r'h([0-9]+)', x.name, re.I).group(1))
     text = re.sub(r'\s+', ' ', x.get_text())
     text = re.sub(r'(^ +| +$)', '', text)
-    print(' ' * (level - 1) + '* ' + text)
+    print(' ' * (level - 1) + '* ' + unicodedata.normalize('NFKC', text))
     continue
 
