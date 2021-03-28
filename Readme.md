@@ -9,7 +9,9 @@ DISTRIB_CODENAME=hirsute
 DISTRIB_DESCRIPTION="Ubuntu Hirsute Hippo (development branch)"
 ```
 * Install packages
+```
 $ sudo apt-get -y install python3-bs4 python3-html5lib python3-requests
+```
 ### Command example
 ```
 $ ./googlenews.py
