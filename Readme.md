@@ -15,7 +15,6 @@ $ sudo apt-get -y install python3-bs4 python3-html5lib python3-requests
 ### Command example
 ```
 $ ./googlenews.py
-
  * Headlines
   * Miami Beach spring breakers hit with extended curfew after SWAT team forced to break up rowdy crowd
    * State of emergency declared in Miami amid spring break partying
